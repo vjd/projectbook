@@ -1,8 +1,7 @@
 new_session: yes
-
+repo: https://github.com/vjd/projectbook/
 rmd_files: [
   "index.Rmd",
   "page1.Rmd"
 ]
 output_dir: "../docs"
-before_chapter_script: "_common.R"

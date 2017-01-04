@@ -1,10 +1,12 @@
 bookdown::gitbook:
+  css: css/projectbook.css
   config:
     toc:
-      collapse: subsection
-      scroll_highlight: yes
-      before: null
-      after: null
-    toolbar:
-      position: fixed
+      collapse: none
+      before: |
+        <li><a href="./">Testing Project rendering with bookdown</a></li>
+      after: |
+        <li><a href="https://vjd.github.io/projectbook/" target="blank">Published with bookdown</a></li>
     sharing: no
+bookdown::html_chapters:
+  css: [css/projectbook.css, css/toc.css]

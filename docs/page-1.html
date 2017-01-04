@@ -12,7 +12,7 @@
 
   <meta property="og:title" content="Testing Projects as books" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="`https://www.vjd.github.io/projectbook" />
+  <meta property="og:url" content="`https://www.vjd.github.io/projectbook/" />
   
   <meta property="og:description" content="Real time project reports available for viewing" />
   <meta name="github-repo" content="vjd/projectbook" />
@@ -51,7 +51,7 @@
 
 
 
-<link rel="stylesheet" href="projectbook.css" type="text/css" />
+<link rel="stylesheet" href="css/projectbook.css" type="text/css" />
 </head>
 
 <body>
@@ -63,15 +63,21 @@
       <nav role="navigation">
 
 <ul class="summary">
+<li><a href="./">Testing Project rendering with bookdown</a></li>
+
+<li class="divider"></li>
 <li class="chapter" data-level="" data-path=""><a href="#welcome"><i class="fa fa-check"></i>Welcome</a></li>
-<li class="chapter" data-level="1" data-path="page1.html"><a href="#page-1"><i class="fa fa-check"></i><b>1</b> Page 1</a><ul>
-<li class="chapter" data-level="1.1" data-path="page1.html"><a href="#header1"><i class="fa fa-check"></i><b>1.1</b> header1</a><ul>
-<li class="chapter" data-level="1.1.1" data-path="page1.html"><a href="#subheading1"><i class="fa fa-check"></i><b>1.1.1</b> subheading1</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#page-1"><i class="fa fa-check"></i>Page 1</a><ul>
+<li class="chapter" data-level="0.1" data-path="page1.html"><a href="#header1"><i class="fa fa-check"></i><b>0.1</b> header1</a><ul>
+<li class="chapter" data-level="0.1.1" data-path="page1.html"><a href="#subheading1"><i class="fa fa-check"></i><b>0.1.1</b> subheading1</a></li>
 </ul></li>
-<li class="chapter" data-level="1.2" data-path="page1.html"><a href="#header2"><i class="fa fa-check"></i><b>1.2</b> header2</a><ul>
-<li class="chapter" data-level="1.2.1" data-path="page1.html"><a href="#subheading2"><i class="fa fa-check"></i><b>1.2.1</b> subheading2</a></li>
+<li class="chapter" data-level="0.2" data-path="page1.html"><a href="#header2"><i class="fa fa-check"></i><b>0.2</b> header2</a><ul>
+<li class="chapter" data-level="0.2.1" data-path="page1.html"><a href="#subheading2"><i class="fa fa-check"></i><b>0.2.1</b> subheading2</a></li>
 </ul></li>
 </ul></li>
+<li class="divider"></li>
+<li><a href="https://vjd.github.io/projectbook/" target="blank">Published with bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -93,18 +99,18 @@
 <h1 class="title">Testing Projects as books</h1>
 <h4 class="author"><em>Vijay Ivaturi</em></h4>
 </div>
-<div id="page-1" class="section level1">
-<h1><span class="header-section-number">1</span> Page 1</h1>
+<div id="page-1" class="section level1 unnumbered">
+<h1>Page 1</h1>
 <div id="header1" class="section level2">
-<h2><span class="header-section-number">1.1</span> header1</h2>
+<h2><span class="header-section-number">0.1</span> header1</h2>
 <div id="subheading1" class="section level3">
-<h3><span class="header-section-number">1.1.1</span> subheading1</h3>
+<h3><span class="header-section-number">0.1.1</span> subheading1</h3>
 </div>
 </div>
 <div id="header2" class="section level2">
-<h2><span class="header-section-number">1.2</span> header2</h2>
+<h2><span class="header-section-number">0.2</span> header2</h2>
 <div id="subheading2" class="section level3">
-<h3><span class="header-section-number">1.2.1</span> subheading2</h3>
+<h3><span class="header-section-number">0.2.1</span> subheading2</h3>
 
 </div>
 </div>
@@ -139,11 +145,7 @@ gitbook.start({
 },
 "download": null,
 "toc": {
-"collapse": "subsection",
-"scroll_highlight": true
-},
-"toolbar": {
-"position": "fixed"
+"collapse": "none"
 }
 });
 });
