@@ -8,4 +8,3 @@ bookdown::gitbook:
     toolbar:
       position: fixed
     sharing: no
-  css: projectbook.css
