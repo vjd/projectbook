@@ -1,0 +1,25 @@
+Package: projectbook
+Type: Package
+Title: testing book rendering
+Version: 0.0.1
+Date: 2016-10-03 
+Description: A test project to test rendering
+Depends:
+    R (>= 3.3.1)
+Imports:
+    bookdown,
+    devtools,
+    knitr,
+    ggplot2,
+    MASS,
+    mrgsolve,
+    PKPDmisc,
+    testthat,
+    tidyverse,
+    haven
+Remotes:
+    metrumresearchgroup/mrgsolve/rdev,
+    dpastoor/PKPDmisc
+License: MIT + file LICENSE
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
